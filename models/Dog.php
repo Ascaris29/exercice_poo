@@ -1,6 +1,7 @@
 <?php
 
-require_once('Animals.php');
+namespace models;
+
 
 class Dog extends Animals{
 

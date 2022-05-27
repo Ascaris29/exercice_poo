@@ -1,7 +1,9 @@
 <?php 
 
+namespace models;
 
-require_once('Animals.php');
+include_once __DIR__ . "/Animals.php";
+
 
 class Cat extends Animals{
 

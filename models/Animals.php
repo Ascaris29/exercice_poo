@@ -1,11 +1,15 @@
 <?php
 
-declare(strict_types=1);
 
-require_once('FeedAble.php');
+namespace models;
 
 
-abstract class Animals implements FeedAble{
+require_once __DIR__ . "/FeedAble.php";
+
+
+
+abstract class Animals implements FeedAble 
+{
 
     public $typeOfCry;
     public $typeOfDeplacement;
@@ -14,10 +18,13 @@ abstract class Animals implements FeedAble{
 
 
     // fonction qui choisit aleatoirement le genre du bebe animal
-    public function __construct(){
-        $this->gender = rand(1,2);
-    }
+    public function __construct(int $gender){
+        $this->gender = $gender;
 
+
+    }
+    // fonction qui choisit aleatoirement le genre du bebe animal
+ 
     //fonction qui decrit le genre du bebe animal
 
     public function getGender():int{
@@ -43,9 +50,6 @@ abstract class Animals implements FeedAble{
         echo "";
     }
 
-    public function fly(){
-        echo "";
-    }
 
     
 
