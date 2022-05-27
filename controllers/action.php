@@ -1,8 +1,9 @@
 <?php
 
-require('Animals.php');
-require('cat.php');
-require('interface.php');
+require_once('dog.php');
+require_once('cat.php');
+require_once('functions.php');
+
 
 $minette = new Cat;
 $minette->cry();
@@ -16,5 +17,7 @@ $dingo->cry();
 $dingo->getGender();
 $dingo->name="Dingo";
 $dingo->color="black";
+feedAnimal($dingo);
+feedAnimal($minette);
 
 

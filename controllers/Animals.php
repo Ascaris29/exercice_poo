@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-require('interface.php');
+require_once('FeedAble.php');
 
-    function feedAnimal(FeedAvable $someAnimal){
 
-        $someAnimal->eat();
-    }
-abstract class Animals implements FeedAvable{
+abstract class Animals implements FeedAble{
 
     public $typeOfCry;
     public $typeOfDeplacement;

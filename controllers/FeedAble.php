@@ -1,6 +1,6 @@
 <?php
 
-interface FeedAvable{
+interface FeedAble{
     public function eat();
     public function fly();
     

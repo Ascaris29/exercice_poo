@@ -1,6 +1,6 @@
 <?php
 
-require('Animals.php');
+require_once('Animals.php');
 
 class Dog extends Animals{
 
