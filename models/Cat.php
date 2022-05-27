@@ -7,9 +7,7 @@ include_once __DIR__ . "/Animals.php";
 
 class Cat extends Animals{
 
-    public $typeOfCry = "miaou";
-    public $typeOfDeplacement ="walk";
-    public $typeOfAlimentation = "carnivorous";
+   
     public $name;
     public $color;
 
