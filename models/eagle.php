@@ -2,11 +2,11 @@
 
 namespace models;
 
-require_once('bird.php');
+require_once('Bird.php');
 
 
 
-class eagle extends bird{
+class Eagle extends Bird{
 
     public $name;
     public $color;
