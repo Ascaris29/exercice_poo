@@ -2,7 +2,7 @@
 
 namespace models;
 
-interface flyingAnimals{
+interface FlyingAnimals{
     
     public function fly();
 }

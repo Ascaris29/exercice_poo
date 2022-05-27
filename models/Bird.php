@@ -3,9 +3,9 @@
 namespace models;
 
 require_once('Animals.php');
-require_once('flyingAnimals.php');
+require_once('FlyingAnimals.php');
 
-abstract class bird extends Animals implements flyingAnimals{
+abstract class Bird extends Animals implements FlyingAnimals{
 
     public function __construct($typeOfCry, $typeOfDeplacement, $typeOfAlimentation,$gender){
         parent::__construct($gender);
