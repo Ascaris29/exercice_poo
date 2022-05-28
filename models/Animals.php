@@ -15,42 +15,43 @@ abstract class Animals implements FeedAble
     public $typeOfDeplacement;
     public $typeOfAlimentation;
     public $gender;
+    public $nameOfThisAnimal;
 
 
     // fonction qui choisit aleatoirement le genre du bebe animal
-    public function __construct(int $gender){
+    public function __construct($typeOfCry, $typeOfAlimentation, $typeOfDeplacement, int $gender, $nameOfThisAnimal){
         $this->gender = $gender;
-
-
+        $this->typeOfCry =$typeOfCry;
+        $this->typeOfAlimentation =$typeOfAlimentation;
+        $this->typeOfDeplacement =$typeOfDeplacement;
+        $this->nameOfThisAnimal = $nameOfThisAnimal;
     }
+    
+        
     // fonction qui choisit aleatoirement le genre du bebe animal
  
     //fonction qui decrit le genre du bebe animal
 
-    public function getGender():int{
+    public function getGender(){
         if($this->gender === 1){
-            echo "His gender is male !<br>";
+            echo "male";
         }else if($this->gender === 2){
-            echo "His gender is female !<br>";
-        }else if($this->gender === 3){
-            echo "His gender is fluid !<br>";
+            echo "female";
         }
-        return $this->gender;
     }
 
-    public function setGender($gender){
+    /*public function setGender($gender){
         $this->gender = $gender;
+    }*/
+
+
+    public function eat(){
+
     }
 
-    public function cry(){
-        echo "";
-    }  
-
-    public function moving(){
-        echo "";
+    public function presentationOfAnimal(){
+        echo  $this->nameOfThisAnimal . ' ' .  $this->typeOfCry .' ' . $this->typeOfAlimentation .' ' . $this->typeOfDeplacement . ' ' .$this->gender; 
     }
-
-
     
 
 }

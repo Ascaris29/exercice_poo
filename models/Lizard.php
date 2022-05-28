@@ -1,19 +1,17 @@
-<?php 
+<?php
 
 namespace models;
+require_once('Reptile.php');
 
-require_once('Bird.php');
-
-
-
-class Eagle extends Bird{
+ class Lizard extends Reptile{
 
     public $name;
 
     public function __construct($name){
-        parent::__construct("kiiiii", "carnivorous", "fly", rand(1,2), "eagle");
+        parent::__construct("psssiiiii", "carnivorous", "slith", rand(1,2), "lizard");
         $this->name = $name;
     }
+
 
     public function displayName(){ 
 
@@ -22,5 +20,6 @@ class Eagle extends Bird{
     }
     
 
-}
 
+
+}

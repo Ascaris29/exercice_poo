@@ -2,26 +2,18 @@
 
 namespace models;
 
-include_once __DIR__ . "/Animals.php";
+require_once('Mamal.php');
 
 
-class Cat extends Animals{
+ class Cat extends Mamal{
 
-   
     public $name;
-    public $color;
-
-
-    public function cry(){
-        echo 'This cat does ' . $this->typeOfCry . '!<br>';
-    }
-    public function eat(){
-        echo 'The cats is ' . $this->typeOfAlimentation . '!<br>';
-    }
-
-    public function fly(){
-        echo 'Miaou, je vole !';
-    }
     
 
+    public function displayName(){ 
+
+        echo $this->name ."\r" ;
+
+    }
 }
+
