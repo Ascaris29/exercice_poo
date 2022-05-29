@@ -8,7 +8,7 @@ require_once('Reptile.php');
     public $name;
 
     public function __construct($name){
-        parent::__construct("psssiiiii", "carnivorous", "slith", rand(1,2), "lizard");
+        parent::__construct("Psssiiiii", "Carnivorous", "Slith", rand(1,2), "Lizard");
         $this->name = $name;
     }
 

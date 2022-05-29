@@ -9,6 +9,10 @@ require_once('Mamal.php');
 
     public $name;
     
+    public function __construct($name){
+        parent::__construct("Miaou", "Carnivorous", "Walk", rand(1,2), "Cat");
+        $this->name = $name;
+    }
 
     public function displayName(){ 
 

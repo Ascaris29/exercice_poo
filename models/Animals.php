@@ -15,16 +15,16 @@ abstract class Animals implements FeedAble
     public $typeOfDeplacement;
     public $typeOfAlimentation;
     public $gender;
-    public $nameOfThisAnimal;
+    public $typeOfThisAnimal;
 
 
     // fonction qui choisit aleatoirement le genre du bebe animal
-    public function __construct($typeOfCry, $typeOfAlimentation, $typeOfDeplacement, int $gender, $nameOfThisAnimal){
+    public function __construct($typeOfCry, $typeOfAlimentation, $typeOfDeplacement, int $gender, $typeOfThisAnimal){
         $this->gender = $gender;
         $this->typeOfCry =$typeOfCry;
         $this->typeOfAlimentation =$typeOfAlimentation;
         $this->typeOfDeplacement =$typeOfDeplacement;
-        $this->nameOfThisAnimal = $nameOfThisAnimal;
+        $this->typeOfThisAnimal = $typeOfThisAnimal;
     }
     
         
@@ -34,15 +34,15 @@ abstract class Animals implements FeedAble
 
     public function getGender(){
         if($this->gender === 1){
-            echo "male";
+            echo "Male";
         }else if($this->gender === 2){
-            echo "female";
+            echo "Female";
         }
     }
 
-    /*public function setGender($gender){
+    public function setGender($gender){
         $this->gender = $gender;
-    }*/
+    }
 
 
     public function eat(){
@@ -50,7 +50,25 @@ abstract class Animals implements FeedAble
     }
 
     public function presentationOfAnimal(){
-        echo  $this->nameOfThisAnimal . ' ' .  $this->typeOfCry .' ' . $this->typeOfAlimentation .' ' . $this->typeOfDeplacement . ' ' .$this->gender; 
+        echo  $this->typeOfThisAnimal . ' ' .  $this->typeOfCry .' ' . $this->typeOfAlimentation .' ' . $this->typeOfDeplacement . ' ' .$this->gender; 
+    }
+
+    public function displayTypeOfAnimal(){
+        echo $this->typeOfThisAnimal;
+    }
+
+    public function displayCry(){
+        echo $this->typeOfCry;
+    }
+    public function displayGender(){
+        echo $this->gender;
+    }
+    
+    public function displayTypeOfAlimentation(){
+        echo $this->typeOfAlimentation;
+    }
+    public function displayTypeOfDeplacement(){
+        echo $this->typeOfDeplacement;
     }
     
 

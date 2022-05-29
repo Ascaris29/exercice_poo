@@ -5,11 +5,12 @@ require_once('Mamal.php');
 
 class Dog extends Mamal{
 
-public $typeOfCry = "waf";
-public $typeOfDeplacement ="walk";
-public $typeOfAlimentation = "carnivorous";
 public $name;
-public $color;
+
+public function __construct($name){
+    parent::__construct("Wouuaf", "Carnivorous", "Walk", rand(1,2), "Dog");
+    $this->name = $name;
+}
 
 
 public function displayName(){ 

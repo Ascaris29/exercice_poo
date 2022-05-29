@@ -11,7 +11,7 @@ class Eagle extends Bird{
     public $name;
 
     public function __construct($name){
-        parent::__construct("kiiiii", "carnivorous", "fly", rand(1,2), "eagle");
+        parent::__construct("Kiiiii", "Carnivorous", "Fly", rand(1,2), "Eagle");
         $this->name = $name;
     }
 
