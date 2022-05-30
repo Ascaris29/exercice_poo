@@ -1,10 +1,9 @@
 <?php
 
-namespace controllers; 
+namespace App\Controllers;
 
 use models\FeedAble;
 
 function feedAnimal(FeedAble $someAnimal){
-
-$someAnimal->eat();
+    $someAnimal->eat();
 }
