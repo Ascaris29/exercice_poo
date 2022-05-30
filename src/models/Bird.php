@@ -1,9 +1,7 @@
 <?php
 
-namespace models;
+namespace App\Models;
 
-require_once('Animals.php');
-require_once('FlyingAnimals.php');
 
 class Bird extends Animals implements FlyingAnimals{
 

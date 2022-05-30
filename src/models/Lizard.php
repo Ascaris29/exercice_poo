@@ -1,7 +1,7 @@
 <?php
 
-namespace models;
-require_once('Reptile.php');
+namespace App\Models;
+
 
  class Lizard extends Reptile{
 

@@ -29,7 +29,7 @@
 }
 .animaux .img_animals img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .animaux .title_animals {
@@ -43,4 +43,20 @@
 }
 .animaux .text .php {
   color: #C0864C;
+}
+
+@media screen and (max-width: 1024px) {
+  .animaux {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 50px 20px;
+  }
+  .animaux .animaux_items {
+    margin-bottom: 170px;
+  }
+  .animaux .animaux_items .text {
+    margin-top: 20px;
+  }
 }

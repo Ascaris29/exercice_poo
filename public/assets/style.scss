@@ -23,7 +23,7 @@
         
         img{
             height:100%;
-            max-width:100%;
+            width:100%;
             display: block;
         }
     }
@@ -41,4 +41,26 @@
         }
     }
 
+}
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .animaux{
+        flex-direction:column;
+        margin:50px 20px;
+
+        .animaux_items{
+
+            margin-bottom: 170px;
+            
+            .text{
+               margin-top: 20px;
+            }
+        }
+        
+    }
 }

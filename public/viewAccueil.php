@@ -1,6 +1,7 @@
 <?php
     namespace views;
-    require_once('../controllers/action.php');
+    require('../vendor/autoload.php');
+    require_once('../src/controllers/action.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,8 +1,7 @@
 <?php
 
-namespace models;
+namespace App\Models;
 
-require_once('autoload.php');
 
 interface FeedAble{
     public function eat();    

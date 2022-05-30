@@ -1,11 +1,7 @@
 <?php
 
 
-namespace models;
-
-
-require_once __DIR__ . "/FeedAble.php";
-
+namespace App\Models;
 
 
 abstract class Animals implements FeedAble 

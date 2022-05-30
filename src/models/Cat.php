@@ -1,17 +1,14 @@
 <?php 
 
-namespace models;
-
-require_once('Bird.php');
+namespace App\Models;
 
 
-
-class Eagle extends Bird{
+ class Cat extends Mamal{
 
     public $name;
-
+    
     public function __construct($name){
-        parent::__construct("Kiiiii", "Carnivorous", "Fly", rand(1,2), "Eagle");
+        parent::__construct("Miaou", "Carnivorous", "Walk", rand(1,2), "Cat");
         $this->name = $name;
     }
 
@@ -20,7 +17,5 @@ class Eagle extends Bird{
         echo $this->name ."\r" ;
 
     }
-    
-
 }
 

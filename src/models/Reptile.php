@@ -1,8 +1,7 @@
 <?php 
 
-namespace models;
-require_once('Animals.php');
-require_once('SlitheringAnimals.php');
+namespace App\Models;
+
 
 abstract class Reptile extends Animals implements SlitheringAnimals{
 

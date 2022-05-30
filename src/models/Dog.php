@@ -1,7 +1,6 @@
 <?php
 
-namespace models;
-require_once('Mamal.php');
+namespace App\Models;
 
 class Dog extends Mamal{
 
