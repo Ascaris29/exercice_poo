@@ -6,9 +6,7 @@
                 <div class="container">
                     <div class="animaux">
                         <div class="animaux_items">
-                        <div class="animaux_items">
-                           
-                            <div class="text">
+                           <div class="text">
                                 <div class="title_animals">
                                     <h2><?php $clickedAnimal->displayName(); ?></h2>
                                 </div>

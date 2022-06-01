@@ -6,15 +6,20 @@
 
 .content{
     height:100vh;
+    padding: 150px;
 }
 
 .container{
     margin:0 auto;
     max-width:1480px;
 }
+
+
+
 .animaux{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items:center;
     height:170px;
     margin: 20px 10px;
     
@@ -27,18 +32,19 @@
             display: block;
         }
     }
-    .title_animals{
-        font-size:1.3rem;
-        text-align:center;
-        text-transform: uppercase;
-        color:#31302F;
-    }
     .text{
         text-align:center;
-
+        font-size:1.5rem;
+        .title_animals{
+            font-size:1.3rem;
+            text-align:center;
+            text-transform: uppercase;
+            color:#31302F;
+        }
         .php{
             color:#C0864C;
         }
+        
     }
 
 }
@@ -57,7 +63,7 @@ header{
                 a{
                     text-decoration:none;
                     color:#31302F; 
-                    font-size:3rem; 
+                    font-size:2.5rem; 
                 }
             }
         }
@@ -66,18 +72,17 @@ header{
             .menuderoulant{
                 display: flex;
                 height:100px;
-                align-items:center;
+                padding-top: 30px;
+                
                 ul{
+                    transform: all;
                     li{
                         list-style-type: none;
                         text-decoration:none;
                         margin-right: 40px;
-                        font-size:2.5rem;
+                        font-size:2rem;
                         color:#C0864C;
                         cursor: pointer;
-                        a{
-                          position:relative;
-                        }
                         
                         
                     }
@@ -91,13 +96,15 @@ header{
                 li{
                     display:none;
                     flex-direction: column;
-                    cursor: pointer;
-                   
+                    cursor: pointer;   
                     a{
                         text-decoration:none;
                         margin-right: 20px;
                         font-size:1.5rem;
-                        color:#C0864C;  
+                        color:#C0864C;             
+                    &:hover{
+                            text-decoration:underline;
+                        }
                     }  
                 }
                  

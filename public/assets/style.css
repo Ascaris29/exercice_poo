@@ -7,6 +7,7 @@
 
 .content {
   height: 100vh;
+  padding: 150px;
 }
 
 .container {
@@ -18,9 +19,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 170px;
   margin: 20px 10px;
 }
@@ -32,14 +36,15 @@
   width: 100%;
   display: block;
 }
-.animaux .title_animals {
+.animaux .text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.animaux .text .title_animals {
   font-size: 1.3rem;
   text-align: center;
   text-transform: uppercase;
   color: #31302F;
-}
-.animaux .text {
-  text-align: center;
 }
 .animaux .text .php {
   color: #C0864C;
@@ -63,27 +68,26 @@ header .navbar {
 header .navbar .navbarIcon h1 a {
   text-decoration: none;
   color: #31302F;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 header .navbar .navbarItems .menuderoulant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 30px;
+}
+header .navbar .navbarItems .menuderoulant ul {
+  -webkit-transform: all;
+          transform: all;
 }
 header .navbar .navbarItems .menuderoulant ul li {
   list-style-type: none;
   text-decoration: none;
   margin-right: 40px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #C0864C;
   cursor: pointer;
-}
-header .navbar .navbarItems .menuderoulant ul li a {
-  position: relative;
 }
 header .navbar .navbarItems .Animals {
   color: #C0864C;
@@ -103,6 +107,9 @@ header .navbar .navbarItems .Animals li a {
   margin-right: 20px;
   font-size: 1.5rem;
   color: #C0864C;
+}
+header .navbar .navbarItems .Animals li a:hover {
+  text-decoration: underline;
 }
 header .navbar .menuderoulant ul:hover .Animals li {
   display: block;
