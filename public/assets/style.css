@@ -45,6 +45,81 @@
   color: #C0864C;
 }
 
+header {
+  padding: 50px;
+}
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navbar .navbarIcon h1 a {
+  text-decoration: none;
+  color: #31302F;
+  font-size: 3rem;
+}
+header .navbar .navbarItems .menuderoulant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .navbar .navbarItems .menuderoulant ul li {
+  list-style-type: none;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 2.5rem;
+  color: #C0864C;
+  cursor: pointer;
+}
+header .navbar .navbarItems .menuderoulant ul li a {
+  position: relative;
+}
+header .navbar .navbarItems .Animals {
+  color: #C0864C;
+  display: block;
+  width: 100%;
+}
+header .navbar .navbarItems .Animals li {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+}
+header .navbar .navbarItems .Animals li a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #C0864C;
+}
+header .navbar .menuderoulant ul:hover .Animals li {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  padding-top: 50px;
+}
+.home .background_image_home .bc_image_home {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (max-width: 1024px) {
   .animaux {
     -webkit-box-orient: vertical;

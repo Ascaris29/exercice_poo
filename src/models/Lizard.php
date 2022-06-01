@@ -6,10 +6,12 @@ namespace App\Models;
  class Lizard extends Reptile{
 
     public $name;
+    public $imageAnimal;
 
-    public function __construct($name){
+    public function __construct($name, $imageAnimal){
         parent::__construct("Psssiiiii", "Carnivorous", "Slith", rand(1,2), "Lizard");
         $this->name = $name;
+        $this->imageAnimal = $imageAnimal;
     }
 
 
@@ -17,6 +19,10 @@ namespace App\Models;
 
         echo $this->name ."\r" ;
 
+    }
+
+    public function displayImage(){
+        echo $this->imageAnimal;
     }
     
 

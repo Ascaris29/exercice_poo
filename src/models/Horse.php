@@ -3,13 +3,13 @@
 namespace App\Models;
 
 
-class Eagle extends Bird{
+ class Horse extends Mamal{
 
     public $name;
     public $imageAnimal;
-
+    
     public function __construct($name, $imageAnimal){
-        parent::__construct("Kiiiii", "Carnivorous", "Fly", rand(1,2), "Eagle");
+        parent::__construct("Huhuhu", "Herbivore", "Walk", rand(1,2), "Horse");
         $this->name = $name;
         $this->imageAnimal = $imageAnimal;
     }
@@ -23,7 +23,5 @@ class Eagle extends Bird{
     public function displayImage(){
         echo $this->imageAnimal;
     }
-    
-
 }
 

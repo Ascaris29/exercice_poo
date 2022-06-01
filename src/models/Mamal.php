@@ -9,6 +9,6 @@ class Mamal extends Animals implements WalkingAnimal{
     {
         
     }
-
 }
+
 

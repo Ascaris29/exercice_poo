@@ -3,13 +3,13 @@
 namespace App\Models;
 
 
-class Eagle extends Bird{
+ class Krokodil extends Reptile{
 
     public $name;
     public $imageAnimal;
 
     public function __construct($name, $imageAnimal){
-        parent::__construct("Kiiiii", "Carnivorous", "Fly", rand(1,2), "Eagle");
+        parent::__construct("GRRRRR ! ", "Carnivorous", "slith", rand(1,2), "krokodil");
         $this->name = $name;
         $this->imageAnimal = $imageAnimal;
     }
@@ -19,11 +19,7 @@ class Eagle extends Bird{
         echo $this->name ."\r" ;
 
     }
-
     public function displayImage(){
         echo $this->imageAnimal;
     }
-    
-
 }
-
