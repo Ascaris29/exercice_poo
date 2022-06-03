@@ -51,19 +51,20 @@
 
 
 
-header{
-    padding:50px;
+header{  
     .navbar{
         display: flex;
         justify-content: space-between;
-        background-color: transparent;
+        background-color: #000000;
         align-items: center;
+         height:260px;
         .navbarIcon{
             h1{
                 a{
                     text-decoration:none;
-                    color:#31302F; 
+                    color:#fff; 
                     font-size:2.5rem; 
+                    padding: 20px;
                 }
             }
         }
@@ -83,7 +84,16 @@ header{
                         font-size:2rem;
                         color:#C0864C;
                         cursor: pointer;
-                        
+                            a{
+                                list-style-type: none;
+                                text-decoration:none;
+                                margin-right: 40px;
+                                font-size:2rem;
+                                color:#C0864C;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
                         
                     }
                 }
@@ -122,9 +132,9 @@ header{
 }
 
 .home{
-    padding-top: 50px;
+    
     .background_image_home{
-        .bc_image_home{
+        .bc_img_home{
             width:100%;
             object-fit: cover;
         }

@@ -50,9 +50,6 @@
   color: #C0864C;
 }
 
-header {
-  padding: 50px;
-}
 header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,15 +57,17 @@ header .navbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: transparent;
+  background-color: #000000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 260px;
 }
 header .navbar .navbarIcon h1 a {
   text-decoration: none;
-  color: #31302F;
+  color: #fff;
   font-size: 2.5rem;
+  padding: 20px;
 }
 header .navbar .navbarItems .menuderoulant {
   display: -webkit-box;
@@ -88,6 +87,16 @@ header .navbar .navbarItems .menuderoulant ul li {
   font-size: 2rem;
   color: #C0864C;
   cursor: pointer;
+}
+header .navbar .navbarItems .menuderoulant ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 2rem;
+  color: #C0864C;
+}
+header .navbar .navbarItems .menuderoulant ul li a:hover {
+  text-decoration: underline;
 }
 header .navbar .navbarItems .Animals {
   color: #C0864C;
@@ -118,10 +127,7 @@ header .navbar .menuderoulant ul:hover .Animals li {
   padding: 0;
 }
 
-.home {
-  padding-top: 50px;
-}
-.home .background_image_home .bc_image_home {
+.home .background_image_home .bc_img_home {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;

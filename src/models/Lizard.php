@@ -8,8 +8,8 @@ namespace App\Models;
     public $name;
     public $imageAnimal;
 
-    public function __construct($name, $imageAnimal){
-        parent::__construct("Psssiiiii", "Carnivorous", "Slith", rand(1,2), "Lizard");
+    public function __construct($name, $imageAnimal, Category $category){
+        parent::__construct("Psssiiiii", "Carnivorous", "Slith", rand(1,2), $category);
         $this->name = $name;
         $this->imageAnimal = $imageAnimal;
     }

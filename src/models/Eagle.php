@@ -8,8 +8,8 @@ class Eagle extends Bird{
     public $name;
     public $imageAnimal;
 
-    public function __construct($name, $imageAnimal){
-        parent::__construct("Kiiiii", "Carnivorous", "Fly", rand(1,2), "Eagle");
+    public function __construct($name, $imageAnimal, Category $category){
+        parent::__construct("Kiiiii", "Carnivorous", "Fly", rand(1,2), $category);
         $this->name = $name;
         $this->imageAnimal = $imageAnimal;
     }

@@ -2,13 +2,17 @@
 
 namespace App\Models;
 
+use App\Models\Category;
+
+
+
 class Dog extends Mamal{
 
 public $name;
 public $imageAnimal;
 
-public function __construct($name, $imageAnimal){
-    parent::__construct("Wouuaf", "Carnivorous", "Walk", rand(1,2), "Dog");
+public function __construct($name, $imageAnimal, Category $category){
+    parent::__construct("Wouuaf", "Carnivorous", "Walk", rand(1,2), $category);
     $this->name = $name;
     $this->imageAnimal = $imageAnimal;
 }
