@@ -3,28 +3,28 @@
 
 namespace App\Models;
 
+use App\Models\Category;
 
 abstract class Animals implements FeedAble 
 {
 
+    public $category;
     public $typeOfCry;
     public $typeOfDeplacement;
-    public $typeOfAlimentation;
+    public $typeOfAlimentation; 
     public $gender;
-    public $typeOfThisAnimal;
 
 
-    // fonction qui choisit aleatoirement le genre du bebe animal
-    public function __construct($typeOfCry, $typeOfAlimentation, $typeOfDeplacement, int $gender, $typeOfThisAnimal){
+    public function __construct($typeOfCry, $typeOfAlimentation, $typeOfDeplacement, int $gender, Category $category){
+        $this->category = $category;
         $this->gender = $gender;
         $this->typeOfCry =$typeOfCry;
         $this->typeOfAlimentation =$typeOfAlimentation;
         $this->typeOfDeplacement =$typeOfDeplacement;
-        $this->typeOfThisAnimal = $typeOfThisAnimal;
     }
-    
+
         
-    // fonction qui choisit aleatoirement le genre du bebe animal
+    
  
     //fonction qui decrit le genre du bebe animal
 
@@ -46,11 +46,11 @@ abstract class Animals implements FeedAble
     }
 
     public function presentationOfAnimal(){
-        echo  $this->typeOfThisAnimal . ' ' .  $this->typeOfCry .' ' . $this->typeOfAlimentation .' ' . $this->typeOfDeplacement . ' ' .$this->gender; 
+        echo  $this->getTypeName() . ' ' .  $this->typeOfCry .' ' . $this->typeOfAlimentation .' ' . $this->typeOfDeplacement . ' ' .$this->gender; 
     }
 
     public function displayTypeOfAnimal(){
-        echo $this->typeOfThisAnimal;
+        echo $this->getTypeName();
     }
 
     public function displayCry(){
@@ -65,6 +65,10 @@ abstract class Animals implements FeedAble
     }
     public function displayTypeOfDeplacement(){
         echo $this->typeOfDeplacement;
+    }
+
+    public function getTypeName(){
+        return get_class($this);
     }
     
 

@@ -1,19 +1,18 @@
-<?php
+<?php 
 
 namespace App\Models;
 
 
- class Lizard extends Reptile{
+ class Owl extends Bird{
 
     public $name;
     public $imageAnimal;
-
+    
     public function __construct($name, $imageAnimal, Category $category){
-        parent::__construct("Psssiiiii", "Carnivorous", "Slith", rand(1,2), $category);
+        parent::__construct("HouHou !", "Carnivorous", "Fly", rand(1,2), $category);
         $this->name = $name;
         $this->imageAnimal = $imageAnimal;
     }
-
 
     public function displayName(){ 
 
@@ -24,8 +23,4 @@ namespace App\Models;
     public function displayImage(){
         echo $this->imageAnimal;
     }
-    
-
-
-
 }
